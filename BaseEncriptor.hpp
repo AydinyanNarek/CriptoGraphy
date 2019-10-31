@@ -8,7 +8,7 @@
 
 class BaseEncriptor {
 
-protected:
+public:
     explicit BaseEncriptor(std::string_view file) : m_file(file) {}
     BaseEncriptor() = default;
     ~BaseEncriptor();
@@ -19,7 +19,7 @@ protected:
     **/
     const std::vector<std::string>& getData() const { return m_data; }
 
-private:
+public:
     /**
      *   @brief Reads data from file and stors in std::vector
     **/
